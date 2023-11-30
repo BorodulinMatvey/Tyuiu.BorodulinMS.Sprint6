@@ -67,6 +67,7 @@ namespace Tyuiu.BorodulinMS.Sprint6.Task0.V30
             // 
             // buttonPushMe_BMS
             // 
+            this.buttonPushMe_BMS.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.buttonPushMe_BMS.Location = new System.Drawing.Point(599, 328);
             this.buttonPushMe_BMS.Name = "buttonPushMe_BMS";
             this.buttonPushMe_BMS.Size = new System.Drawing.Size(165, 92);
