@@ -65,5 +65,10 @@ namespace Tyuiu.BorodulinMS.Sprint6.Task1.V16
             }
 
         }
+
+        private void FormMain_BMS_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

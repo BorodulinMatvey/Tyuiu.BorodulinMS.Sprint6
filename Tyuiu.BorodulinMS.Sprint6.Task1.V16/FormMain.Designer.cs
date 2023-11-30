@@ -178,8 +178,12 @@ namespace Tyuiu.BorodulinMS.Sprint6.Task1.V16
             this.Controls.Add(this.groupBoxInPutData_BMS);
             this.Controls.Add(this.groupBoxOutPutData_BMS);
             this.Controls.Add(this.groupBoxTask_BMS);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "FormMain_BMS";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Спринт 6 | Таск 1 | Вариант 16 | Бородулин М.С";
+            this.Load += new System.EventHandler(this.FormMain_BMS_Load);
             this.groupBoxTask_BMS.ResumeLayout(false);
             this.groupBoxTask_BMS.PerformLayout();
             this.groupBoxOutPutData_BMS.ResumeLayout(false);
