@@ -30,29 +30,29 @@ namespace Tyuiu.BorodulinMS.Sprint6.Task2.V14
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.groupBoxTask_BMS = new System.Windows.Forms.GroupBox();
             this.textBoxTask_BMS = new System.Windows.Forms.TextBox();
             this.groupBoxInPutData_BMS = new System.Windows.Forms.GroupBox();
-            this.labelStartStep_BMS = new System.Windows.Forms.Label();
-            this.labelStopStep_BMS = new System.Windows.Forms.Label();
-            this.textBoxStartStep_BMS = new System.Windows.Forms.TextBox();
             this.textBoxStopStep_BMS = new System.Windows.Forms.TextBox();
+            this.textBoxStartStep_BMS = new System.Windows.Forms.TextBox();
+            this.labelStopStep_BMS = new System.Windows.Forms.Label();
+            this.labelStartStep_BMS = new System.Windows.Forms.Label();
             this.buttonHelp_BMS = new System.Windows.Forms.Button();
             this.buttonDone = new System.Windows.Forms.Button();
             this.groupBoxOutPutData_BMS = new System.Windows.Forms.GroupBox();
+            this.labelResult_BMS = new System.Windows.Forms.Label();
+            this.chartFunction_BMS = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.dataGridViewFunction_BMS = new System.Windows.Forms.DataGridView();
             this.X = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.chartFunction_BMS = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.labelResult_BMS = new System.Windows.Forms.Label();
             this.groupBoxTask_BMS.SuspendLayout();
             this.groupBoxInPutData_BMS.SuspendLayout();
             this.groupBoxOutPutData_BMS.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFunction_BMS)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartFunction_BMS)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFunction_BMS)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBoxTask_BMS
@@ -89,14 +89,22 @@ namespace Tyuiu.BorodulinMS.Sprint6.Task2.V14
             this.groupBoxInPutData_BMS.Text = "Ввод данных";
             this.groupBoxInPutData_BMS.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // labelStartStep_BMS
+            // textBoxStopStep_BMS
             // 
-            this.labelStartStep_BMS.AutoSize = true;
-            this.labelStartStep_BMS.Location = new System.Drawing.Point(7, 26);
-            this.labelStartStep_BMS.Name = "labelStartStep_BMS";
-            this.labelStartStep_BMS.Size = new System.Drawing.Size(102, 20);
-            this.labelStartStep_BMS.TabIndex = 0;
-            this.labelStartStep_BMS.Text = "Старт шага:";
+            this.textBoxStopStep_BMS.Location = new System.Drawing.Point(172, 49);
+            this.textBoxStopStep_BMS.Name = "textBoxStopStep_BMS";
+            this.textBoxStopStep_BMS.Size = new System.Drawing.Size(100, 26);
+            this.textBoxStopStep_BMS.TabIndex = 1;
+            this.textBoxStopStep_BMS.Text = "5";
+            this.textBoxStopStep_BMS.TextChanged += new System.EventHandler(this.textBoxStopStep_BMS_TextChanged);
+            // 
+            // textBoxStartStep_BMS
+            // 
+            this.textBoxStartStep_BMS.Location = new System.Drawing.Point(11, 49);
+            this.textBoxStartStep_BMS.Name = "textBoxStartStep_BMS";
+            this.textBoxStartStep_BMS.Size = new System.Drawing.Size(100, 26);
+            this.textBoxStartStep_BMS.TabIndex = 1;
+            this.textBoxStartStep_BMS.Text = "-5";
             // 
             // labelStopStep_BMS
             // 
@@ -107,22 +115,14 @@ namespace Tyuiu.BorodulinMS.Sprint6.Task2.V14
             this.labelStopStep_BMS.TabIndex = 0;
             this.labelStopStep_BMS.Text = "Конец шага:";
             // 
-            // textBoxStartStep_BMS
+            // labelStartStep_BMS
             // 
-            this.textBoxStartStep_BMS.Location = new System.Drawing.Point(11, 49);
-            this.textBoxStartStep_BMS.Name = "textBoxStartStep_BMS";
-            this.textBoxStartStep_BMS.Size = new System.Drawing.Size(100, 26);
-            this.textBoxStartStep_BMS.TabIndex = 1;
-            this.textBoxStartStep_BMS.Text = "-5";
-            // 
-            // textBoxStopStep_BMS
-            // 
-            this.textBoxStopStep_BMS.Location = new System.Drawing.Point(172, 49);
-            this.textBoxStopStep_BMS.Name = "textBoxStopStep_BMS";
-            this.textBoxStopStep_BMS.Size = new System.Drawing.Size(100, 26);
-            this.textBoxStopStep_BMS.TabIndex = 1;
-            this.textBoxStopStep_BMS.Text = "5";
-            this.textBoxStopStep_BMS.TextChanged += new System.EventHandler(this.textBoxStopStep_BMS_TextChanged);
+            this.labelStartStep_BMS.AutoSize = true;
+            this.labelStartStep_BMS.Location = new System.Drawing.Point(7, 26);
+            this.labelStartStep_BMS.Name = "labelStartStep_BMS";
+            this.labelStartStep_BMS.Size = new System.Drawing.Size(102, 20);
+            this.labelStartStep_BMS.TabIndex = 0;
+            this.labelStartStep_BMS.Text = "Старт шага:";
             // 
             // buttonHelp_BMS
             // 
@@ -161,6 +161,33 @@ namespace Tyuiu.BorodulinMS.Sprint6.Task2.V14
             this.groupBoxOutPutData_BMS.TabStop = false;
             this.groupBoxOutPutData_BMS.Text = "Вывод данных";
             // 
+            // labelResult_BMS
+            // 
+            this.labelResult_BMS.AutoSize = true;
+            this.labelResult_BMS.Location = new System.Drawing.Point(15, 25);
+            this.labelResult_BMS.Name = "labelResult_BMS";
+            this.labelResult_BMS.Size = new System.Drawing.Size(93, 20);
+            this.labelResult_BMS.TabIndex = 2;
+            this.labelResult_BMS.Text = "Результат:";
+            // 
+            // chartFunction_BMS
+            // 
+            chartArea2.Name = "ChartArea1";
+            this.chartFunction_BMS.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chartFunction_BMS.Legends.Add(legend2);
+            this.chartFunction_BMS.Location = new System.Drawing.Point(199, 25);
+            this.chartFunction_BMS.Name = "chartFunction_BMS";
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series2.IsVisibleInLegend = false;
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chartFunction_BMS.Series.Add(series2);
+            this.chartFunction_BMS.Size = new System.Drawing.Size(476, 419);
+            this.chartFunction_BMS.TabIndex = 1;
+            this.chartFunction_BMS.Text = "chart1";
+            // 
             // dataGridViewFunction_BMS
             // 
             this.dataGridViewFunction_BMS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -190,33 +217,6 @@ namespace Tyuiu.BorodulinMS.Sprint6.Task2.V14
             this.Column2.Name = "Column2";
             this.Column2.Width = 50;
             // 
-            // chartFunction_BMS
-            // 
-            chartArea1.Name = "ChartArea1";
-            this.chartFunction_BMS.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chartFunction_BMS.Legends.Add(legend1);
-            this.chartFunction_BMS.Location = new System.Drawing.Point(199, 25);
-            this.chartFunction_BMS.Name = "chartFunction_BMS";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series1.IsVisibleInLegend = false;
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chartFunction_BMS.Series.Add(series1);
-            this.chartFunction_BMS.Size = new System.Drawing.Size(476, 419);
-            this.chartFunction_BMS.TabIndex = 1;
-            this.chartFunction_BMS.Text = "chart1";
-            // 
-            // labelResult_BMS
-            // 
-            this.labelResult_BMS.AutoSize = true;
-            this.labelResult_BMS.Location = new System.Drawing.Point(15, 25);
-            this.labelResult_BMS.Name = "labelResult_BMS";
-            this.labelResult_BMS.Size = new System.Drawing.Size(93, 20);
-            this.labelResult_BMS.TabIndex = 2;
-            this.labelResult_BMS.Text = "Результат:";
-            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -238,8 +238,8 @@ namespace Tyuiu.BorodulinMS.Sprint6.Task2.V14
             this.groupBoxInPutData_BMS.PerformLayout();
             this.groupBoxOutPutData_BMS.ResumeLayout(false);
             this.groupBoxOutPutData_BMS.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFunction_BMS)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartFunction_BMS)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFunction_BMS)).EndInit();
             this.ResumeLayout(false);
 
         }

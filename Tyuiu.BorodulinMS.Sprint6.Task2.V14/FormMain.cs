@@ -88,5 +88,10 @@ namespace Tyuiu.BorodulinMS.Sprint6.Task2.V14
         {
             buttonDone.BackColor = Color.Blue;
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
