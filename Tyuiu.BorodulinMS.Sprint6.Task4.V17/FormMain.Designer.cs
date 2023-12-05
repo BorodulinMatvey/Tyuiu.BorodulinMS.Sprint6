@@ -29,17 +29,17 @@ namespace Tyuiu.BorodulinMS.Sprint6.Task4.V17
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title5 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.groupBoxTask_BMS = new System.Windows.Forms.GroupBox();
             this.textBoxTask_BMS = new System.Windows.Forms.TextBox();
             this.groupBoxInPutData_BMS = new System.Windows.Forms.GroupBox();
+            this.textBoxStopStep_BMS = new System.Windows.Forms.TextBox();
+            this.textBoxStartStep_BMS = new System.Windows.Forms.TextBox();
             this.labelStopStep_BMS = new System.Windows.Forms.Label();
             this.labelStartStep_BMS = new System.Windows.Forms.Label();
-            this.textBoxStartStep_BMS = new System.Windows.Forms.TextBox();
-            this.textBoxStopStep_BMS = new System.Windows.Forms.TextBox();
             this.buttonDone_BMS = new System.Windows.Forms.Button();
             this.buttonSave_BMS = new System.Windows.Forms.Button();
             this.groupBoxOutPutData_BMS = new System.Windows.Forms.GroupBox();
@@ -48,7 +48,7 @@ namespace Tyuiu.BorodulinMS.Sprint6.Task4.V17
             this.buttonHelp_BMS = new System.Windows.Forms.Button();
             this.panelnPutData_BMS = new System.Windows.Forms.Panel();
             this.panelOutPutData_BMS = new System.Windows.Forms.Panel();
-            this.splitter1 = new System.Windows.Forms.Splitter();
+            this.splitterOutPutData_BMS = new System.Windows.Forms.Splitter();
             this.panelResult_BMS = new System.Windows.Forms.Panel();
             this.groupBoxTask_BMS.SuspendLayout();
             this.groupBoxInPutData_BMS.SuspendLayout();
@@ -95,6 +95,22 @@ namespace Tyuiu.BorodulinMS.Sprint6.Task4.V17
             this.groupBoxInPutData_BMS.TabStop = false;
             this.groupBoxInPutData_BMS.Text = "Ввод данных";
             // 
+            // textBoxStopStep_BMS
+            // 
+            this.textBoxStopStep_BMS.Location = new System.Drawing.Point(191, 50);
+            this.textBoxStopStep_BMS.Name = "textBoxStopStep_BMS";
+            this.textBoxStopStep_BMS.Size = new System.Drawing.Size(100, 26);
+            this.textBoxStopStep_BMS.TabIndex = 1;
+            this.textBoxStopStep_BMS.Text = "5";
+            // 
+            // textBoxStartStep_BMS
+            // 
+            this.textBoxStartStep_BMS.Location = new System.Drawing.Point(11, 50);
+            this.textBoxStartStep_BMS.Name = "textBoxStartStep_BMS";
+            this.textBoxStartStep_BMS.Size = new System.Drawing.Size(100, 26);
+            this.textBoxStartStep_BMS.TabIndex = 1;
+            this.textBoxStartStep_BMS.Text = "-5";
+            // 
             // labelStopStep_BMS
             // 
             this.labelStopStep_BMS.AutoSize = true;
@@ -112,22 +128,6 @@ namespace Tyuiu.BorodulinMS.Sprint6.Task4.V17
             this.labelStartStep_BMS.Size = new System.Drawing.Size(102, 20);
             this.labelStartStep_BMS.TabIndex = 0;
             this.labelStartStep_BMS.Text = "Старт шага:";
-            // 
-            // textBoxStartStep_BMS
-            // 
-            this.textBoxStartStep_BMS.Location = new System.Drawing.Point(11, 50);
-            this.textBoxStartStep_BMS.Name = "textBoxStartStep_BMS";
-            this.textBoxStartStep_BMS.Size = new System.Drawing.Size(100, 26);
-            this.textBoxStartStep_BMS.TabIndex = 1;
-            this.textBoxStartStep_BMS.Text = "-5";
-            // 
-            // textBoxStopStep_BMS
-            // 
-            this.textBoxStopStep_BMS.Location = new System.Drawing.Point(191, 50);
-            this.textBoxStopStep_BMS.Name = "textBoxStopStep_BMS";
-            this.textBoxStopStep_BMS.Size = new System.Drawing.Size(100, 26);
-            this.textBoxStopStep_BMS.TabIndex = 1;
-            this.textBoxStopStep_BMS.Text = "5";
             // 
             // buttonDone_BMS
             // 
@@ -175,25 +175,25 @@ namespace Tyuiu.BorodulinMS.Sprint6.Task4.V17
             // 
             // chartFunction_BMS
             // 
-            chartArea5.Name = "ChartArea1";
-            this.chartFunction_BMS.ChartAreas.Add(chartArea5);
+            chartArea1.Name = "ChartArea1";
+            this.chartFunction_BMS.ChartAreas.Add(chartArea1);
             this.chartFunction_BMS.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend5.Name = "Legend1";
-            this.chartFunction_BMS.Legends.Add(legend5);
+            legend1.Name = "Legend1";
+            this.chartFunction_BMS.Legends.Add(legend1);
             this.chartFunction_BMS.Location = new System.Drawing.Point(5, 5);
             this.chartFunction_BMS.Name = "chartFunction_BMS";
-            series5.ChartArea = "ChartArea1";
-            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series5.IsVisibleInLegend = false;
-            series5.Legend = "Legend1";
-            series5.Name = "Series1";
-            this.chartFunction_BMS.Series.Add(series5);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series1.IsVisibleInLegend = false;
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chartFunction_BMS.Series.Add(series1);
             this.chartFunction_BMS.Size = new System.Drawing.Size(890, 584);
             this.chartFunction_BMS.TabIndex = 5;
             this.chartFunction_BMS.Text = "chart1";
-            title5.Name = "TitleSin";
-            title5.Text = "График функции sin(x)/x+1,7-cos(x)*4*x-6";
-            this.chartFunction_BMS.Titles.Add(title5);
+            title1.Name = "TitleSin";
+            title1.Text = "График функции sin(x)/x+1,7-cos(x)*4*x-6";
+            this.chartFunction_BMS.Titles.Add(title1);
             // 
             // buttonHelp_BMS
             // 
@@ -233,13 +233,13 @@ namespace Tyuiu.BorodulinMS.Sprint6.Task4.V17
             this.panelOutPutData_BMS.Size = new System.Drawing.Size(375, 594);
             this.panelOutPutData_BMS.TabIndex = 8;
             // 
-            // splitter1
+            // splitterOutPutData_BMS
             // 
-            this.splitter1.Location = new System.Drawing.Point(375, 150);
-            this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(3, 594);
-            this.splitter1.TabIndex = 9;
-            this.splitter1.TabStop = false;
+            this.splitterOutPutData_BMS.Location = new System.Drawing.Point(375, 150);
+            this.splitterOutPutData_BMS.Name = "splitterOutPutData_BMS";
+            this.splitterOutPutData_BMS.Size = new System.Drawing.Size(3, 594);
+            this.splitterOutPutData_BMS.TabIndex = 9;
+            this.splitterOutPutData_BMS.TabStop = false;
             // 
             // panelResult_BMS
             // 
@@ -258,7 +258,7 @@ namespace Tyuiu.BorodulinMS.Sprint6.Task4.V17
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1278, 744);
             this.Controls.Add(this.panelResult_BMS);
-            this.Controls.Add(this.splitter1);
+            this.Controls.Add(this.splitterOutPutData_BMS);
             this.Controls.Add(this.panelOutPutData_BMS);
             this.Controls.Add(this.panelnPutData_BMS);
             this.MinimumSize = new System.Drawing.Size(1300, 800);
@@ -296,7 +296,7 @@ namespace Tyuiu.BorodulinMS.Sprint6.Task4.V17
         private System.Windows.Forms.Button buttonHelp_BMS;
         private System.Windows.Forms.Panel panelnPutData_BMS;
         private System.Windows.Forms.Panel panelOutPutData_BMS;
-        private System.Windows.Forms.Splitter splitter1;
+        private System.Windows.Forms.Splitter splitterOutPutData_BMS;
         private System.Windows.Forms.Panel panelResult_BMS;
     }
 }
